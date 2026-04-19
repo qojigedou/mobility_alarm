@@ -29,7 +29,7 @@ def run() -> None:
     log.info("  DB      : %s", cfg.db_path)
     log.info("  CSV dir : %s", cfg.csv_dir)
     log.info("  Datasets: %s", list(cfg.datasets.keys()))
-    log.info("  Weather : %s → today", cfg.weather_start)
+    log.info("  Weather : %s -> today", cfg.weather_start)
     log.info("=" * 55)
 
     conn = apply_schema(str(cfg.db_path))

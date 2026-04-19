@@ -57,7 +57,7 @@ async def stream_csv(
         "$$app_token": app_token,
     }
 
-    log.info("[%s] Streaming → %s ...", name, out_path)
+    log.info("[%s] Streaming -> %s ...", name, out_path)
     bytes_written = 0
     last_log      = time.monotonic()
 

@@ -30,7 +30,7 @@ class DomainSettings(BaseSettings):
     chicago_lat:         float = 41.8781
     chicago_lon:         float = -87.6298
 
-    # total=7200 → 2 h max per large CSV stream; sock_read=300 → 5 min stall limit
+    # total=7200 -> 2 h max per large CSV stream; sock_read=300 -> 5 min stall limit
     http_total_timeout:    int = 7200
     http_sockread_timeout: int = 300
 

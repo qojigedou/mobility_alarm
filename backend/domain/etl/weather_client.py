@@ -40,7 +40,7 @@ async def fetch_weather_marks(
     if end is None:
         end = date.today().isoformat()
 
-    log.info("[weather] Fetching %s → %s ...", start, end)
+    log.info("[weather] Fetching %s -> %s ...", start, end)
 
     params = {
         "latitude":         lat,
