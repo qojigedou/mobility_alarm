@@ -1,0 +1,49 @@
+:root {
+  font-family: "DM Sans", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #172033;
+  background: #f5f2e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-text-primary: #172033;
+  --color-text-secondary: #475569;
+  --color-text-tertiary: #74839a;
+  --color-background-primary: #fffdfa;
+  --color-background-secondary: #f3efe5;
+  --color-border-tertiary: #d6d0c3;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(199, 210, 254, 0.55), transparent 30%),
+    radial-gradient(circle at top right, rgba(191, 219, 254, 0.45), transparent 28%),
+    linear-gradient(180deg, #f8f5ee 0%, #efe8db 100%);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 20px;
+}
+
+a {
+  color: inherit;
+}
