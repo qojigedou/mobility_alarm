@@ -10,7 +10,6 @@ Example with a raining conditions
 
 Before starting the apps, run the ETL pipeline first. This project depends on the database produced by `backend/domain/etl/runner.py`.
 
-1. Open a terminal in `backend`
 2. Run the ETL script:
 
 ```bash
@@ -19,13 +18,11 @@ python -m domain.etl.runner
 
 This step downloads the large source files, fetches weather data, transforms the raw data, and writes aggregated results into the local SQLite database. The full fetch can take around 2 hours.
 
-3. Start the backend API from `backend`:
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-4. Start the frontend from `frontend`:
 
 ```bash
 npm install
@@ -37,7 +34,6 @@ By default, the frontend reads the API URL from `VITE_API_URL` and falls back to
 ## Project structure
 
 ```text
-mobility_alarm/
 |- backend/
 |  |- app/
 |  |  |- main.py                # FastAPI entrypoint
